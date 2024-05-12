@@ -1,0 +1,10 @@
+-NE555 should be on 5V rail
+-DC-DC conveters need to be 12V-12V (not 5V-12V)
+-Route 555 sense lines through relay 2nd channel
+-Need 100nf capacitor across each 555 input pin
+-Plant trip does not need voltage control
+-Onboard +12V supply should come from "master" PV panel with inrush-prevention diode.
+-Do not use 12V linear regulator replacements, as they blow up during switching. Use buck module instead.
+-PWM driver optocouper output needs 3k3 resistor instead of 10k 
+-Update potentiometer resistor values for wider range of voltage control
+-Add LEDs to indicate status of bang-bang controller.
